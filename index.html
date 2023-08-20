@@ -10,7 +10,6 @@
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- [endif] -->
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,21 +21,23 @@
     <!----- main ----->
     <article class="scroll-area">
         <div class="box box__bg_photo">
-            <h1 class="px-12">この夏、最高のイベントが始まる</h1>
+            <h1 class="px-12 text-7xl">この夏、最高のイベントが始まる</h1>
         </div>
-        <div class="px-3">
-            <h2 class="text-6xl">introduction</h2>
-            <p class="pt-3">
+        <section class="p-20 bg-white initial-fadein2">
+            <h2 class="text-9xl text-center text-red-300 initial-fadein2">introduction</h2>
+            <p class="text-5xl text-center py-5">はじめに</p>
+            <p class="text-5xl py-10">
                 僕は夏に生まれた26歳なので、今年で27回目の夏になる。<br>
-                27回目になると、飲みかけのアイスコーヒーの氷が解けたときみたいに夏の価値は薄くなってしまうのだろうか。<br>
+                27回目になると、夏の価値は薄くなってしまうのだろうか。<br>
                 いや、そんなことはない。<br>
                 2023年の夏は一生に一度だし、26歳の夏も一生に一度だから。<br>
                 特別な夏をもっと特別にする、そんなイベントを用意しました。<br>
             </p>
-        </div>
-        <section>
-            <h2 class="text-6xl">schedule</h2>
-            <ul class="time-schedule mt-3">
+        </section>
+        <section class="bg-cyan-200 bg-opacity-25 p-20 fadeUpTrigger2">
+            <h2 class="text-9xl text-center text-red-300">schedule</h2>
+            <p class="text-5xl py-10">こんなスケジュールのイメージです</p>
+            <ul class="time-schedule my-5 ml-[150px]">
                 <li>
                     <span class="time">12:00</span>
                     <div class="sch_box">
@@ -80,29 +81,51 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <h2 class="text-6xl">feature</h2>
-            <h3>メイドカフェ</h3>
-            <p>コンテンツの内容</p>
-            <h3>ミンナのウタ</h3>
-            <p>コンテンツの内容</p>
-            <h3>おまつり</h3>
-            <p>コンテンツの内容</p>
+        <section class="bg-yellow-400 bg-opacity-25 p-20 fadeUpTrigger2">
+            <h2 class="text-9xl text-center text-red-300">feature</h2>
+            <h3 class="text-7xl text-center pt-20">#1メイドカフェ</h3>
+            <img src="images/maid_cafe.jpg" class="rounded-3xl mx-auto pt-10 cast-img">
+            <p class="text-5xl pt-10">メイドカフェ、それはもはや日本の文化。
+                そこでは誰もがご主人様、あるいはお嬢様。
+                ようこそ、非日常へ。
+            </p>
+            <h3 class="text-7xl text-center pt-20">#2ミンナのウタ</h3>
+            <img src="images/minnna_no_uta.jpg" class="rounded-3xl mx-auto pt-10 cast-img">
+            <p class="text-5xl pt-10">この夏、最高の恐怖があなたを襲う、、！
+                ホラー界の巨匠清水崇が送る、至極の恐怖体験。
+                GENERATIONSの演技にも注目だ。
+            </p>
+            <h3 class="text-7xl text-center pt-20">#3おまつり</h3>
+            <img src="images/matsuri.jpg" class="rounded-3xl mx-auto pt-10 cast-img">
+            <p class="text-5xl pt-10">2つのお祭りをご用意しました！
+                1つめのお祭りが「江東区民まつり　亀戸地区夏まつり大会」
+                2つめのお祭りが「三鷹阿波おどり」
+                さあ、私たちはどちらの祭りを選ぶのか！？
+            </p>
         </section>
-        <section>
-            <h2 class="text-6xl">cast</h2>
-            <p>Aさん</p>
-            <h3>ミンナのウタ</h3>
-            <p>Bさん</p>
-            <h3>おまつり</h3>
-            <p>Cさん</p>
+        <section class="bg-green-300 bg-opacity-25 p-20 fadeUpTrigger2">
+            <h2 class="text-9xl text-center text-red-300">cast</h2>
+            <img src="images/person2.jpg" class="rounded-full mx-auto mt-10 cast-img">
+            <p class="text-6xl font-bold text-center my-5">いけちゃん</p>
+            <img src="images/person.jpg" class="rounded-full mx-auto mt-20 cast-img">
+            <p class="text-6xl font-bold text-center my-5">しずちゃん</p>
+            <img src="images/person3.jpg" class="rounded-full mx-auto mt-20 cast-img">
+            <p class="text-6xl font-bold text-center mt-5">まっちゃん</p>
         </section>
+        <section class="p-20">
+            <p class="text-9xl text-center text-red-300">08/20</p>
+            <p class="text-5xl text-center mt-5">ROADSHOW</p>
+        </section>
+        <!----- footer ----->
+        <footer class="text-center"><p class="text-5xl">shizu.co.inc</p></footer>
+        <!----- /footer ----->
     </article>
     <!----- /main ----->
 
-    <!----- footer ----->
-    <footer>フッター</footer>
-    <!----- /footer ----->
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
